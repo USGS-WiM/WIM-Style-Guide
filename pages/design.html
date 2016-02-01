@@ -1,0 +1,115 @@
+<aside id="nav-in">
+    <ul>
+        <li>
+            <a href="" ng-click="scrollIt('#design')">Overview</a>
+        </li>
+        <li>
+            <a href="" ng-click="scrollIt('#colors')">Colors</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#colors')">Primary</a></li>
+                <li><a href="" ng-click="scrollIt('#secondarycolors')">Secondary</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="" ng-click="scrollIt('#accessibility')">Accessibility</a></li>
+        </li>
+    </ul>
+</aside>
+
+
+<section>
+    <h1 id="design">Design</h1>
+    <p>
+        Design practices to keep apps consistent and complaint with government standards.
+    </p>
+
+    <hr id="colors">
+
+    <h1>Colors</h1>
+    <br>
+    <h3>Primary Colors</h3>
+    <p>
+        Primary colors are the main colors used for text, links, background colors, and accent colors. Darker or lighter shades of the colors should be used for :hover, :active, or :focus events.
+    </p>
+    <span class="color-display blue">
+        <h1>Blue</h1>
+        <h3>#0071bc</h3><h3>{{primaryBlue}}</h3>
+        <h4><span style="opacity: 0.5">LESS Variable:</span> <b>@blue</b></h4>
+        <span class="alternate alternate1"><b>Dark Blue:&nbsp;</b> #205493 &nbsp;/&nbsp; {{primaryBlued}} &nbsp;/&nbsp; LESS: @blued</span>
+        <span class="alternate alternate2"><b>Light Blue:&nbsp;</b> #0089e5 &nbsp;/&nbsp; {{primaryBluel}} &nbsp;/&nbsp; LESS: @bluel</span>
+    </span><!--
+    --><span class="color-display black">
+        <h1>Black</h1>
+        <h3>#2D3146</h3><h3>{{primaryBlack}}</h3>
+        <h4><span style="opacity: 0.5">LESS Variable:</span> <b>@black</b></h4>
+        <span class="alternate alternate1"><b>Dark Black:&nbsp;</b> #212434 &nbsp;/&nbsp; {{primaryBlackd}} &nbsp;/&nbsp; LESS: @blackd</span>
+        <span class="alternate alternate2"><b>Light Black:&nbsp;</b> #3d4360 &nbsp;/&nbsp; {{primaryBlackl}} &nbsp;/&nbsp; LESS: @blackl</span>
+    </span>
+    <br>
+    <span class="color-display grey">
+        <h1>Grey</h1>
+        <h3>#e2e2e2</h3><h3>{{primaryGrey}}</h3>
+        <h4><span style="opacity: 0.8">LESS Variable:</span> <b>@grey</b></h4>
+        <span class="alternate alternate1"><b>Dark Grey:&nbsp;</b> #d3d3d3 &nbsp;/&nbsp; {{primaryGreyd}} &nbsp;/&nbsp; LESS: @greyd</span>
+        <span class="alternate alternate2"><b>Light Grey:&nbsp;</b> #FCFCFC &nbsp;/&nbsp; {{primaryGreyl}} &nbsp;/&nbsp; LESS: @greyl</span>
+    </span>
+
+    <hr id="secondarycolors">
+
+    <h3>Secondary Colors</h3>
+    <p>
+        Secondary colors are the colors used for buttons, labels, and other elements just to grab attention. Darker or lighter shades of the colors should be used for :hover, :active, or :focus events.
+    </p>
+    <span class="secondary-display lightblue">
+        <h1>Light Blue</h1>
+        <h3>#02bfe7</h3><h3>{{lightblue}}</h3>
+        <h4><span style="opacity: 0.8">LESS Variable:</span> <b>@lightblue</b></h4>
+        <span class="alternate alternate1"><b>Dark Lightblue:</b><br>#00a6d2<br>{{lightblued}}<br>LESS: @lightblued</span>
+    </span><!--
+    --><span class="secondary-display green">
+        <h1>Green</h1>
+        <h3>#2e8540</h3><h3>{{green}}</h3>
+        <h4><span style="opacity: 0.8">LESS Variable:</span> <b>@green</b></h4>
+        <span class="alternate alternate1"><b>Dark Green:</b><br>#266d34<br>{{greend}}<br>LESS: @greend</span>
+    </span><!--
+    --><span class="secondary-display yellow">
+        <h1>Yellow</h1>
+        <h3>#fdb81e</h3><h3>{{yellow}}</h3>
+        <h4><span style="opacity: 0.8">LESS Variable:</span> <b>@yellow</b></h4>
+        <span class="alternate alternate1"><b>Dark Yellow:</b><br>#f7ab02<br>{{yellowd}}<br>LESS: @yellowd</span>
+    </span><!--
+    --><span class="secondary-display red">
+        <h1>Red</h1>
+        <h3>#2e8540</h3><h3>{{red}}</h3>
+        <h4><span style="opacity: 0.8">LESS Variable:</span> <b>@red</b></h4>
+        <span class="alternate alternate1"><b>Dark Red:</b><br>#cd2026<br>{{redd}}<br>LESS: @redd</span>
+    </span>
+
+    <hr id="accessibility">
+
+    <h1>Accessibility</h1>
+    <p>
+        Accessibility is important. <b>All</b> websites and applications need to be 508 compliant. Read more about 508 compliance at the link below.
+        <br><br>
+        <a class="btn-wim-primary btn-wim-sm" href="http://www.section508.gov/" target="_blank">Section508.gov</a>
+        <br><br>
+        This means that all websites and applications should allow the following:
+    </p>
+    <blockquote>
+        <ul>
+            <li>Users should be able to tab to navigate between links.</li>
+            <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>
+            <li>Users should be able to identify links without relying on color alone.</li>
+            <li>Users should be able to activate hover and and focus states with both a mouse and a keyboard.</li>
+        </ul>
+    </blockquote>
+    <div class="wim-alert">
+        <b>Tip:</b>
+        Make sure all <code>&lt;a></code>, <code>&lt;button></code>, <code>&lt;img></code>, and other interactive elements have an <code>alt=""</code> entry.
+    </div>
+    <p>
+        You can check to see if your website is 508 compliant at this free website:
+    </p>
+    <a class="btn-wim-primary btn-wim-sm" href="http://www.508checker.com/" target="_blank">Free 508 Compliance Checker</a>
+
+</section>

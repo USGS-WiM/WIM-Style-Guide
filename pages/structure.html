@@ -1,0 +1,139 @@
+<aside id="nav-in">
+    <ul>
+        <li>
+            <a href="" ng-click="scrollIt('#grid')">Grid System</a>
+        </li>
+        <li>
+            <a href="" ng-click="scrollIt('#lists')">Lists</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#unorderedlist')">Unordered List</a></li>
+                <li><a href="" ng-click="scrollIt('#orderedlist')">Ordered List</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="" ng-click="scrollIt('#alerts')">Alerts</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#normalalerts')">Normal Alerts</a></li>
+                <li><a href="" ng-click="scrollIt('#fixedalerts')">Fixed Alerts</a></li>
+                <li><a href="" ng-click="scrollIt('#dismissalerts')">Dismissing Alerts</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+</aside>
+<section>
+    <h1>Structure</h1>
+    <p>
+        Details for layout for similar layouts and elements across websites and applications.
+    </p>
+
+    <hr id="grid">
+
+    <h1>Grid System</h1>
+    <p>
+        It is best to use Bootstrap's built-in grid system. You can learn more about it using the button below.
+        <br><br>
+        <a class="btn-wim-primary" href="http://getbootstrap.com/css/#grid" target="_blank">Learn more about Bootstrap Grids</a>
+    </p>
+
+    <hr id="lists">
+
+    <h1>Lists</h1>
+    <p id="unorderedlist">Pre-styled <code>&lt;ul></code> and <code>&lt;ol></code> lists.<p>
+    <br>
+    <h2>Unordered List</h2>
+    <div class="list-wrapper">
+        <h6 class="wim-list-header">Why use an unordered list</h6>
+        <ul>
+            <li>When order does not matter.</li>
+            <li>To neatly organize related items.</li>
+            <li>To avoid a long, drawn-out paragraph.</li>
+            <li>Especially when order doesn't matter.</li>
+        </ul>
+    </div>
+    <br>
+    <p>
+        <b>Example Code:</b>
+    </p>
+    <pre>&lt;!-- Unordered List --><br>&lt;h6 class="wim-list-header">My Unordered List&lt;h6><br>&lt;ul><br>    &lt;li>List Item&lt;/li><br>    &lt;li>List Item&lt;/li><br>&lt;/ul></pre>
+    <span  id="orderedlist"></span>
+    <br>
+    <h2>Ordered List</h2>
+    <div class="list-wrapper">
+        <h6 class="wim-list-header">How to make an ordered list</h6>
+        <ol>
+            <li>Give it a heading like in the example code below.</li>
+            <li>Start with the basic <code>&lt;ol></code> structure.</li>
+            <li>Think of items that need to be displayed in order.</li>
+            <li>Add them to the list in order.</li>
+        </ol>
+    </div>
+    <br>
+    <p>
+        <b>Example Code:</b>
+    </p>
+    <pre>&lt;!-- Ordered List --><br>&lt;h6 class="wim-list-header">My Ordered List&lt;h6><br>&lt;ol><br>    &lt;li>List Item&lt;/li><br>    &lt;li>List Item&lt;/li><br>&lt;/ol></pre>
+
+    <hr id="alerts">
+
+    <h1>Alerts</h1>
+    <p id="normalalerts">
+        Alerts should be used to notify a user of an action (successfull submission, error, etc). Normal alerts can be inserted anywhere, and fixed alerts will always appear in the top-right area of the screen.
+    </p>
+    <br>
+    <h2>Normal Alerts</h2>
+    <p>
+        Normal alerts will stretch to match the width of the container
+    </p>
+    <div style="width: 50%">
+        <div class="wim-alert">
+            <b>Default Alert!</b> Use for basic info!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert</code></span>
+        </div>
+        <div class="wim-alert-primary">
+            <b>Primary Alert!</b> Use for basic info!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert-primary</code></span>
+        </div>
+        <div class="wim-alert-success">
+            <b>Success Alert!</b> Use when action succeeds!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert-success</code></span>
+        </div>
+        <div class="wim-alert-info">
+            <b>Info Alert!</b> Use to provide info!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert-info</code></span>
+        </div>
+        <div class="wim-alert-warning">
+            <b>Warning Alert!</b> Use to warn user of issue!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert-warning</code></span>
+        </div>
+        <div class="wim-alert-danger">
+            <b>Danger Alert!</b> Use to warn user of error!<i class="ion-close-round close-alert"></i><span class="alert-class"><code>.wim-alert-danger</code></span>
+        </div>
+    </div>
+    <p>
+        <b>Example Code:</b>
+    </p>
+    <pre>&lt;div class="wim-alert-danger"><br>    &lt;b>Danger Alert!&lt;/b> This is a danger alert!<br>    &lt;i class="ion-close-round close-alert">&lt;/i> &lt;!-- Close Button - MUST INCLUDE --><br>&lt;/div></pre>
+    <br id="fixedalerts">
+    <h2>Fixed Alerts</h2>
+    <p>
+        Fixed alerts will always appear in the top-right area of the screen. They must be called by a javascript function to display them.
+    </p>
+    <div class="wim-alert-fixed" id="demo-alert-fixed">
+        <i class="ion-close-round close-alert"></i>
+        <b>Fixed Alert!</b>Use for basic info!<span class="alert-class"><code>.wim-alert</code></span>
+    </div>
+    <br>
+    <button class="btn-wim-primary" id="show-demo-alert">Show Example Fixed Alert</button>
+    <br><br>
+    <p>
+        Fixed alerts can also be any color. Use classes <code>.wim-alert-fixed</code>, <code>.wim-alert-fixed-primary</code>, <code>.wim-alert-fixed-success</code>,  <code>.wim-alert-fixed-info</code>,  <code>.wim-alert-fixed-warning</code>, and <code>.wim-alert-fixed-danger</code>.
+    </p>
+    <p>
+        <b>Example Code:</b>
+    </p>
+    <pre>&lt;div class="wim-alert-fixed-danger"><br>    &lt;i class="ion-close-round close-alert">&lt;/i> &lt;!-- Close Button - MUST INCLUDE --><br>    &lt;b>Fixed Danger Alert!&lt;/b><br>    This is a fixed danger alert!<br>&lt;/div></pre>
+    <br id="dismissalerts">
+    <h2>Dismissing Alerts</h2>
+    <p>
+        In order to dismiss alerts, you must include the <code>&lt;i class="ion-close-round close-alert">&lt;/i></code> line within the alert in the same position it is at in the examples above. You must also include the following Javascript code in your main Javascript file in your project (<b>JQuery is required for use</b>).
+    </p>
+    <pre>$(".close-alert").click(function(){<br>    $(this).parent().slideUp(250);<br>});</pre>
+
+
+</section>

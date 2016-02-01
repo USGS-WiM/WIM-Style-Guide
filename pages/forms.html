@@ -1,0 +1,176 @@
+<aside id="nav-in">
+    <ul>
+        <li>
+            <a href="" ng-click="scrollIt('#buttons')">Buttons</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#buttoncolors')">Button Colors</a></li>
+                <li><a href="" ng-click="scrollIt('#buttonsizes')">Button Sizes</a></li>
+                <li><a href="" ng-click="scrollIt('#iconbuttons')">Text & Icon Buttons</a></li>
+                <li><a href="" ng-click="scrollIt('#buttongroups')">Button Groups</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="" ng-click="scrollIt('#inputs')">Input Elements</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#textinput')">Text Input</a></li>
+                <li><a href="" ng-click="scrollIt('#textinputsizes')">Text Input Sizes</a></li>
+                <li><a href="" ng-click="scrollIt('#selectinput')">Select Input</a></li>
+                <li><a href="" ng-click="scrollIt('#otherinputs')">Other Inputs</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <button class="btn-wim-primary" ng-click="toggleDisabled = !toggleDisabled" ng-hide="toggleDisabled">Disable Elements</button>
+    <button class="btn-wim-success" ng-click="toggleDisabled = !toggleDisabled" ng-show="toggleDisabled">Enable Elements</button>
+</aside>
+
+<section>
+    <h1 id="buttons">Buttons</h1>
+    <p>
+        The button classes below can be used on <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements.
+    </p>
+
+    <hr id="buttoncolors">
+
+    <h2>Button Colors</h2>
+    <p>Add these classes to select color</p>
+    <span class="wim-item-desc">Default Button</span><button class="btn-wim" ng-disabled="toggleDisabled">.btn-wim</button><br>
+    <span class="wim-item-desc">Primary Color Button</span><button class="btn-wim-primary" ng-disabled="toggleDisabled">.btn-wim-primary</button><br>
+    <span class="wim-item-desc">Success Color Button</span><button class="btn-wim-success" ng-disabled="toggleDisabled">.btn-wim-success</button><br>
+    <span class="wim-item-desc">Info Color Button</span><button class="btn-wim-info" ng-disabled="toggleDisabled">.btn-wim-info</button><br>
+    <span class="wim-item-desc">Warning Color Button</span><button class="btn-wim-warning" ng-disabled="toggleDisabled">.btn-wim-warning</button><br>
+    <span class="wim-item-desc">Danger Color Button</span><button class="btn-wim-danger" ng-disabled="toggleDisabled">.btn-wim-danger</button><br>
+    <h4>Examples:</h4>
+    <pre>&lt;button class="btn-wim-danger">Danger Button!&lt;/button><br>&lt;button class="btn-wim-primary">Primary Button!&lt;/button></pre>
+
+    <hr id="buttonsizes">
+
+    <h2>Button Sizes</h2>
+    <p>Add these classes along with a color class to change the size</p>
+    <span class="wim-item-desc">Large Button</span><button class="btn-wim btn-wim-lg" ng-disabled="toggleDisabled">.btn-wim-lg</button><br>
+    <span class="wim-item-desc">Default Button</span><button class="btn-wim" ng-disabled="toggleDisabled">No Additional Class</button><br>
+    <span class="wim-item-desc">Small Button</span><button class="btn-wim btn-wim-sm" ng-disabled="toggleDisabled">.btn-wim-sm</button><br>
+    <span class="wim-item-desc">Extra Small Button</span><button class="btn-wim btn-wim-xs" ng-disabled="toggleDisabled">.btn-wim-xs</button><br>
+    <h4>Examples:</h4>
+    <pre>&lt;button class="btn-wim btn-wim-lg">Large Button!&lt;/button><br>&lt;button class="btn-wim-primary btn-wim-xs">Extra Small Button!&lt;/button></pre>
+
+    <hr id="iconbuttons">
+
+    <h2>Text & Icon Buttons</h2>
+    <p>For icon buttons, the icon must come <b>before</b> the text within the button element. Look at the example below. Do not use icons only.</p>
+    <span class="wim-item-desc">Icon Button</span><button class="btn-wim-primary btn-wim-icon" ng-disabled="toggleDisabled"><i class="ion-ionic"></i>.btn-wim-icon</button><br>
+    <span class="wim-item-desc">Large Icon Button</span><button class="btn-wim-info btn-wim-lg btn-wim-icon" ng-disabled="toggleDisabled"><i class="ion-ionic"></i>.btn-wim-icon</button><br>
+    <h4>Examples:</h4>
+    <pre>&lt;button class="btn-wim-primary btn-wim-icon">&lt;i class="ion-ionic">&lt;/i>Icon Button!&lt;/button><br>&lt;button class="btn-wim-info btn-wim-lg btn-wim-icon">&lt;i class="ion-chevron-up">&lt;/i>Large Icon Button!&lt;/button></pre>
+
+    <hr id="buttongroups">
+
+    <h2>Button Groups</h2>
+    <p>Group buttons (up to 5) in a container side-by-side to fill the width by adding class .btn-wim-group-X where X is 1-5.</p>
+    <div class="wim-button-groups">
+        <div class="group-item">
+            <button class="btn-wim btn-wim-group-1" ng-disabled="toggleDisabled">1</button>
+        </div>
+        <div class="group-item">
+            <button class="btn-wim btn-wim-group-2" ng-disabled="toggleDisabled">2</button><!--
+            --><button class="btn-wim btn-wim-group-2" ng-disabled="toggleDisabled">2</button>
+        </div>
+        <div class="group-item">
+            <button class="btn-wim btn-wim-group-3" ng-disabled="toggleDisabled">3</button><!--
+            --><button class="btn-wim btn-wim-group-3" ng-disabled="toggleDisabled">3</button><!--
+            --><button class="btn-wim btn-wim-group-3" ng-disabled="toggleDisabled">3</button>
+        </div>
+        <div class="group-item">
+            <button class="btn-wim btn-wim-group-4" ng-disabled="toggleDisabled">4</button><!--
+            --><button class="btn-wim btn-wim-group-4" ng-disabled="toggleDisabled">4</button><!--
+            --><button class="btn-wim btn-wim-group-4" ng-disabled="toggleDisabled">4</button><!--
+            --><button class="btn-wim btn-wim-group-4" ng-disabled="toggleDisabled">4</button>
+        </div>
+        <div class="group-item">
+            <button class="btn-wim btn-wim-group-5" ng-disabled="toggleDisabled">5</button><!--
+            --><button class="btn-wim btn-wim-group-5" ng-disabled="toggleDisabled">5</button><!--
+            --><button class="btn-wim btn-wim-group-5" ng-disabled="toggleDisabled">5</button><!--
+            --><button class="btn-wim btn-wim-group-5" ng-disabled="toggleDisabled">5</button><!--
+            --><button class="btn-wim btn-wim-group-5" ng-disabled="toggleDisabled">5</button>
+        </div>
+    </div>
+    <h4>Examples:</h4>
+    <p><span style="font-weight: bolder; color: #e31c3d;">IMPORTANT:</span>Because of CSS issues, you MUST comment out the space between buttons like shown below)</p>
+    <pre>&lt;!-- Three button group --><br>&lt;div class="group-wrapper"><br>    &lt;button class="btn-wim btn-wim-group-3">3&lt;/button>&lt;!--<br>    -->&lt;button class="btn-wim btn-wim-group-3">3&lt;/button>&lt;!--<br>    -->&lt;button class="btn-wim btn-wim-group-3">3&lt;/button><br>&lt;/div></pre>
+    <hr>
+</section>
+
+<section id="inputs">
+    <h1>Inputs</h1>
+    <p>
+        For styling input boxes, text areas, and other form elements.
+    </p>
+
+    <hr id="textinput">
+
+    <h2>Text Input</h2>
+    <p>Text input boxes are styled automatically.</p><br>
+    <span class="wim-item-desc">Text Input</span><input type="text" placeholder="Text Input" ng-disabled="toggleDisabled"><br>
+    <span class="wim-item-desc">Password Input</span><input type="password" value="password" placeholder="Password Input" ng-disabled="toggleDisabled"><br>
+    <span class="wim-item-desc">Number Input</span><input type="number" value="123456" placeholder="Number Input" ng-disabled="toggleDisabled"><br>
+    <span class="wim-item-desc">Textarea</span><textarea placeholder="Textarea" style="width: 300px; height: 140px;" ng-disabled="toggleDisabled"></textarea><br>
+    <h4>Examples:</h4>
+    <pre>&lt;input type="text" placeholder="Text Input"><br>&lt;input type="password" value="myPassword#!" placeholder="Password Input"><br>&lt;textarea placeholder="This is a Textarea">&lt;/textarea></pre>
+
+    <hr id="textinputsizes">
+
+    <h2>Text Input Sizes</h2>
+    <p>These size classes can be applied to <code>&lt;input></code> elements or <code>&lt;textarea></code> elements.</p><br>
+    <span class="wim-item-desc">Large Input</span><input type="text" class="input-wim-lg" placeholder=".input-wim-lg" ng-disabled="toggleDisabled"><br>
+    <span class="wim-item-desc">Default</span><input type="text" placeholder="No Class Needed" ng-disabled="toggleDisabled"><br>
+    <span class="wim-item-desc">Small Input</span><input type="text" class="input-wim-sm" placeholder=".input-wim-sm"  ng-disabled="toggleDisabled"><br>
+    <h4>Examples:</h4>
+    <pre>&lt;input type="text" class="input-wim-lg" placeholder="Large Input"><br>&lt;input type="text" class="input-wim-sm" placeholder="Small Input"></pre>
+
+    <hr id="selectinput">
+
+    <h2>Select Input</h2>
+    <p>Select input elements <b>must</b> be wrapped in a container with class .select-wim. See example below.</p><br>
+    <span class="wim-item-desc">Large Select</span>
+    <span class="select-wim-lg">
+        <select ng-disabled="toggleDisabled">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select>
+    </span><br>
+    <span class="wim-item-desc">Default Select</span>
+    <span class="select-wim">
+        <select ng-disabled="toggleDisabled">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select>
+    </span><br>
+    <span class="wim-item-desc">Small Select</span>
+    <span class="select-wim-sm">
+        <select ng-disabled="toggleDisabled">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select>
+    </span>
+    <h4>Examples:</h4>
+    <pre>&lt;!-- All Select Elements <b>must</b> be wrapped in a span wrapper with one of these classes, depending on the size you need:<br>     <em>.select-wim<br>     .select-wim-lg<br>     .select-wim-sm</em><br>--><br><br><b>Example (Large Select)</b><br>&lt;span class="select-wim-lg"><br>    &lt;select><br>        &lt;option>Option 1&lt;/option><br>        &lt;option>Option 2&lt;/option><br>        &lt;option>Option 3&lt;/option><br>    &lt;/select><br>&lt;/span></pre>
+
+    <hr id="otherinputs">
+
+    <h2>Other Input Elements</h2>
+    <p>Default styles. No classes needed.</p><br>
+    <span class="wim-item-desc">Radio Input</span><input type="radio" id="test1"  ng-disabled="toggleDisabled"/><label for="test1">Radio</label><br>
+    <span class="wim-item-desc">Checkbox Input</span><input type="checkbox" id="test2"  ng-disabled="toggleDisabled"/><label for="test2">Checkbox</label><br>
+    <h4>Examples:</h4>
+    <pre>&lt;input type="radio" id="radio1" />&lt;label for="radio1">Radio&lt;/label><br>&lt;input type="checkbox" id="checkbox1" />&lt;label for="checkbox1">Checkbox&lt;/label></pre>
+
+</section>

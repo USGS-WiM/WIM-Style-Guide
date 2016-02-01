@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,900,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
+* {
+  outline: none !important;
+}
+*:hover {
+  outline: none !important;
+}
+a {
+  text-decoration: none !important;
+  box-sizing: border-box;
+  padding: 3px;
+  color: #274DAD;
+  font-weight: 600;
+}
+a:visited {
+  text-decoration: none !important;
+  color: #6083db;
+  border-bottom: 1px dotted #214295 !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+afocus {
+  text-decoration: none !important;
+}
+a:active {
+  text-decoration: none !important;
+}
+h1 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-weight: 500;
+}
+h2 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+h3 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 1.17em;
+  font-weight: 500;
+}
+h4 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: 500;
+}
+h5 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans;
+  font-weight: 700;
+}
+h6 {
+  padding: 10px 0 5px 0;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  font-size: 1.17em;
+  font-family: "Source Sans Pro", sans;
+  font-weight: 700;
+}
+p {
+  font-family: "Source Sans Pro", sans;
+  color: rgba(45, 49, 70, 0.8);
+  box-sizing: border-box;
+  padding: 4px 0;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 1.35em;
+}
+pre {
+  background-color: #FCFCFC;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0;
+}
+blockquote {
+  background-color: #FCFCFC;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgba(45, 49, 70, 0.8);
+}
+code {
+  color: #274DAD;
+}

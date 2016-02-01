@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <!--<link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/structure.css" /> -->
+    <link rel="stylesheet" href="css/wim.css" />
+
+    <title>WiM Style Guide</title>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="structureController">
+
+    <header>
+        <!-- <img src="assets/branding/wim_hor_cap_light.png"> -->
+        <nav>
+            <h1>WiM<small> styleguide</small></h1>
+            <a href="#/">Setup</a>
+            <a href="#/structure">Structure</a>
+            <a href="#/design">Design</a>
+            <a href="#/typography">Typography</a>
+            <a href="#/forms">Forms</a>
+            <a href="#/icons">Icons</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<aside id="nav-in">
+    <ul>
+        <li>
+            <a href="" ng-click="scrollIt('#overview')">Typography</a>
+            <ul>
+                <li><a href="" ng-click="scrollIt('#paragraphs')">Paragraphs</a></li>
+                <li><a href="" ng-click="scrollIt('#headings')">Headings</a></li>
+                <li><a href="" ng-click="scrollIt('#links')">Links</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+
+<section>
+    <h1 id="overview">Typography</h1>
+    <p>
+        Styles for paragraphs, headings, links, and other text elements.  All elements are pre-styled. No classes necessary.
+    </p>
+
+    <hr>
+
+    <h2>Overview</h2>
+    <p>Overview of available font-faces and weights.</p>
+    <h3>Fonts Available</h3>
+    <ul>
+        <li>
+            <h4 style="font-family: 'Open Sans', sans-serif;">Open Sans - Sans Serif - Weights: 200, 300, 400, 600, 700, 900</h4>
+            <pre>//CSS<br>font-family: 'Open Sans', sans-serif;<br>or<br>//LESS<br>font-family: @sans;</pre>
+        </li>
+        <li>
+            <h4>Merriweather - Serif - Weights: 300, 400, 700, 900</h4>
+            <pre>//CSS<br>font-family: 'Merriweather', serif;<br>or<br>//LESS<br>font-family: @serif;</pre>
+        </li>
+    </ul>
+
+    <hr id="paragraphs">
+
+    <h2>Paragraphs</h2>
+    <p>Automatical styling for <code>&lt;p></code> tags, <code>&lt;pre></code> tags, <code>&lt;code></code> tags, and <code>&lt;blockquote></code> tags.</p>
+    <br>
+
+    <h3><code>&lt;p></code> - Paragraph tag</h3>
+    <p>
+        This is an example of an automatically-styled paragraph tag. Stilton gouda cauliflower cheese. Cheese strings goat chalk and cheese boursin blue castello dolcelatte the big cheese swiss. Halloumi paneer st. agur blue cheese cheeseburger lancashire fromage frais cream cheese lancashire. Jarlsberg fromage frais airedale
+    </p>
+    <br>
+
+    <h3><code>&lt;pre></code> - Pre tag</h3>
+    <p>Text in a <code>&lt;pre></code> element is displayed in a fixed-width font, and it preserves both spaces and line breaks.</p>
+    <pre>This is an example of an automatically-styled pre tag. Stilton gouda cauliflower cheese. Cheese strings goat chalk and cheese boursin blue castello dolcelatte the big cheese swiss. Halloumi paneer st. agur blue cheese cheeseburger lancashire fromage frais cream cheese lancashire. Jarlsberg fromage frais airedale</pre>
+    <br>
+
+    <h3><code>&lt;code></code> - Code tag</h3>
+    <p>
+        The &lt;code> tag can be used many places - normally within a paragraph element - to display a <em>short</em> block of computer code. It's not meant to be used for a code snippet. Pre would be better for full snippets. For example, you might use it when talking about which variable to use in documentation:
+        <br><br>
+        <b>Example:</b>
+        <br>
+        When accessing the total number of apples in a box, use <code>$scope.applesInBox_total;</code>, but when looking for only green apples in the box, use <code>$scope.applesInBox_green;</code>.
+    </p>
+    <br>
+
+    <h3><code>&lt;blockquote></code> - Quote tag</h3>
+    <p>
+        The &lt;blockquote> tag should be used for quotes from outside sources.
+    </p>
+    <blockquote>
+        This is a quote from an outside source.<br>- Mitch Samuels
+    </blockquote>
+    <p>
+        <b>Example Code:</b>
+    <p>
+    <pre>&lt;blockquote><br>    This is a quote from an outside source<br>    &lt;br><br>    - Mitch Samuels<br>&lt;blockquote></pre>
+
+
+    <hr id="headings">
+
+    <h2>Headings</h2>
+    <p>Styling for all <code>&lt;h_></code> tags 1-6.</p>
+    <br>
+    <h1><code>&lt;h1></code> - H1 - Merriweather, 2.0em, 500 weight, 1px letter spacing.</h1>
+    <h2><code>&lt;h2></code> - H2 - Merriweather, 1.5em, 500 weight, 1px letter spacing.</h2>
+    <h3><code>&lt;h3></code> - H3 - Merriweather, 1.17em, 500 weight, 1px letter spacing.</h3>
+    <h4><code>&lt;h4></code> - H4 - Merriweather, 1em, 500 weight, 1px letter spacing.</h4>
+    <h5><code>&lt;h5></code> - H5 - Open Sans, 1.5em, 700 weight, 1px letter spacing.</h5>
+    <h6><code>&lt;h6></code> - H6 - Open Sans, 1.17em, 700 weight, 1px letter spacing.</h6>
+
+    <hr id="links">
+
+    <h2>Links</h2>
+    <p>Pre-styled <code>&lt;a></code> links.<p>
+    <br>
+    <p>
+        All <code>&lt;a></code> links are pre-styled for active links, visited links, and hover. This is an <a href="http://google.com" target="_blank">example link</a> that goes to Google (so it should be visited), and <a href="http://omfgdogs.com/" target="_blank">this is a link</a> to a random website that should not be visited.
+    </p>
+
+</section>
