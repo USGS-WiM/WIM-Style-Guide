@@ -15,29 +15,187 @@
 <section>
     <h1 id="overview">Typography</h1>
     <p>
-        Styles for paragraphs, headings, links, and other text elements.  All elements are pre-styled. No classes necessary.
+        The fonts and styles below should be used for all comminications, websites, and literature to ensure a consistent look and feel for everything both offline and online. All fonts are included in the wim.css file.
     </p>
 
     <hr>
 
-    <h2>Overview</h2>
-    <p>Overview of available font-faces and weights.</p>
-    <h3>Fonts Available</h3>
-    <ul>
-        <li>
-            <h4 style="font-family: 'Open Sans', sans-serif;">Open Sans - Sans Serif - Weights: 200, 300, 400, 600, 700, 900</h4>
-            <pre>//CSS<br>font-family: 'Open Sans', sans-serif;<br>or<br>//LESS<br>font-family: @sans;</pre>
-        </li>
-        <li>
-            <h4>Merriweather - Serif - Weights: 300, 400, 700, 900</h4>
-            <pre>//CSS<br>font-family: 'Merriweather', serif;<br>or<br>//LESS<br>font-family: @serif;</pre>
-        </li>
-    </ul>
+    <h2>Font Families - Web</h2>
+    <p><b>Merriweather</b> should be used for all header and sub header text, and <b>Open Sans</b> should be used for all other copy (body, quotes etc). Using heavier font weights for headers and to highlight important messages.</p>
+    <h3>Merriweather</h3>
+
+    <div class="font-display merriweather-300">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Merriweather Light</span>
+            <span>Weight: <b>300</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+
+    <div class="font-display merriweather-400">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Merriweather Normal</span>
+            <span>Weight: <b>400</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+
+    <div class="font-display merriweather-700">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Merriweather Bold</span>
+            <span>Weight: <b>700</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+    <div class="font-display merriweather-900">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Merriweather Black</span>
+            <span>Weight: <b>900</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+
+
+    <div class="codebox">
+        <label>CSS</label>
+        <pre>font-family: 'Merriweather', serif;</pre>
+    </div>
+    <div class="codebox">
+        <label>LESS</label>
+        <pre>font-family: @serif;</pre>
+    </div>
+
+
+    <br><br>
+
+    <h3>Open Sans</h3>
+
+
+
+    <div class="font-display opensans-300">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Open Sans Light</span>
+            <span>Weight: <b>300</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+    <div class="font-display opensans-400">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Open Sans Normal</span>
+            <span>Weight: <b>400</b></span>
+            <span>Style: <b>Normal</b></span>
+        </div>
+    </div>
+    <div class="font-display opensans-700">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Open Sans Black</span>
+            <span>Weight: <b>700</b></span>
+            <span>Style: <b>Bold</b></span>
+        </div>
+    </div>
+    <div class="font-display opensans-900">
+        <div class="font-large">
+            Aa
+        </div><!--
+        --><div class="font-letters">
+            <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+            <span>abcdefghijklmnopqrstuvwxyz</span>
+            <span>1234567890(.,:;?!#$%&)</span>
+        </div><!--
+        --><div class="font-meta">
+            <span>Open Sans Black</span>
+            <span>Weight: <b>900</b></span>
+            <span>Style: <b>Black</b></span>
+        </div>
+    </div>
+
+
+    <div class="codebox">
+        <label>CSS</label>
+        <pre>font-family: 'Open Sans', sans-serif;</pre>
+    </div>
+    <div class="codebox">
+        <label>LESS</label>
+        <pre>font-family: @sans;</pre>
+    </div>
+
+
+    <br><br>
+
+
+    <h2>Font Families - Offline</h2>
+    <p>While the fonts are fully included and ready to use, you may want to use them offline. They are available free from Google Webfonts if you want to use them in another web project, or the font files are availble free on Font Squirrel for use on your computer (for fliers, business cards, etc)</p>
+    <p>
+        <a target="_blank" href="https://www.google.com/fonts/specimen/Open+Sans" class="btn-wim-primary btn-wim-sm">Merriweather (Webfont)</a>&nbsp;
+        <a target="_blank" href="https://www.google.com/fonts/specimen/Merriweather" class="btn-wim-primary btn-wim-sm">Open Sans (Webfont)</a>
+        <br>
+        <a target="_blank" href="http://www.fontsquirrel.com/fonts/merriweather?q%5Bterm%5D=merriweather&q%5Bsearch_check%5D=Y" class="btn-wim-primary btn-wim-sm">Merriweather (Font Files)</a>&nbsp;
+        <a target="_blank" href="http://www.fontsquirrel.com/fonts/open-sans" class="btn-wim-primary btn-wim-sm">Open Sans (Font Files)</a>
+    </p>
+
+
+    <!-- <pre>//CSS<br>font-family: 'Merriweather', serif;<br>or<br>//LESS<br>font-family: @serif;</pre> -->
 
     <hr id="paragraphs">
 
     <h2>Paragraphs</h2>
-    <p>Automatical styling for <code>&lt;p></code> tags, <code>&lt;pre></code> tags, <code>&lt;code></code> tags, and <code>&lt;blockquote></code> tags.</p>
+    <p>Automatic styling for <code>&lt;p></code> tags, <code>&lt;pre></code> tags, <code>&lt;code></code> tags, and <code>&lt;blockquote></code> tags.</p>
     <br>
 
     <h3><code>&lt;p></code> - Paragraph tag</h3>

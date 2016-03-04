@@ -1,3 +1,5 @@
+//out: ../css/typography.css, sourcemap: false, compress: true
+
 @import "variables.less";
 // typography.less
 *{
@@ -35,23 +37,24 @@ a{
 #header(){
     padding: 10px 0 5px 0;
     margin: 0 auto;
-    font-family: @serif;
     letter-spacing: 1px;
+    font-family: 'Merriweather' serif;
+    color: @blackl;
 }
 h1{
     #header();
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 600;
 }
 h2{
     #header();
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{
     #header();
     font-size: 1.17em;
-    font-weight: 500;
+    font-weight: 600;
 }
 h4{
     #header();
@@ -77,15 +80,41 @@ p{
     font-family: @sans;
     color: fade(@black, 80%);
     box-sizing: border-box;
-    padding: 4px 0;
+    padding: 10px 0;
     margin: 0 auto;
     font-weight: 400;
+    font-size: 12pt;
     letter-spacing: 0.15px;
-    line-height: 1.45em;
+    line-height: 1.65em;
+}
+.codebox{
+    margin: 15px 0;
+    label{
+        display: block;
+        width: 100%;
+        background-color: @greyl;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 5px 15px;
+        font-size: 12pt;
+        letter-spacing: 1.5px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border: 1px solid @greyd;
+        border-bottom: none;
+    }
+    pre{
+        margin: 0 auto;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: 1px solid @grey;
+        background-color: @white;
+        padding: 10px;
+    }
 }
 pre{
     background-color: @greyl;
-    border-radius: 0;
+    border-radius: 4px;;
     box-sizing: border-box;
     padding: 15px;
     margin: 10px 0;
@@ -95,7 +124,7 @@ blockquote{
     border-radius: 0;
     box-sizing: border-box;
     padding: 15px;
-    margin: 10px 0;
+    margin: 25px 0;
     font-style: italic;
     letter-spacing: 1px;
     font-weight: 400;
@@ -103,4 +132,5 @@ blockquote{
 }
 code{
     color: @blue;
+    margin: 15px 0;
 }

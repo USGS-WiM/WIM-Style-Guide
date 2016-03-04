@@ -1,3 +1,5 @@
+//out: ../css/styleguide-specific.css, sourcemap: false, compress: true
+
 @import "variables.less";
 // Layout.less
 
@@ -9,40 +11,35 @@ body{
 }
 
 header{
-    background-color: @blued;
     text-align: center;
-    img{
-        height: 70px;
-        box-sizing: border-box;
-        padding: 15px 0 15px 0;
-    }
+
     nav{
-        background-color: @blue;
+        background-color: @bluel;
         box-sizing: border-box;
-        text-align: right;
+        text-align: left;
         padding: 0 5%;
         position: fixed;
         display: block;
         width: 100%;
         z-index: 5000;
-        h1{
-            color: white;
-            display: inline-block;
-            float: left;
-            small{
-                color: fade(@white, 20%);
-            }
+
+        img{
+            height: 70px;
+            box-sizing: border-box;
+            padding: 15px 0 15px 0;
+            margin: 0 45px 0 0;
         }
+
         a{
             display: inline-block;
             box-sizing: border-box;
             color: @white;
-            text-transform: uppercase;
+            text-transform: lowercase;
             letter-spacing: 1px;
-            font-weight: 400;
-            padding: 15px 15px;
+            font-weight: 600;
+            padding: 15px 10px;
             transition: @transition;
-            font-size: 8pt;
+            font-size: 9pt;
             &:hover{
                 background-color: fade(@white, 10%);
                 transition: @transition;
@@ -62,10 +59,14 @@ header{
 
 #main{
     box-sizing: border-box;
-    padding: 85px 35px 55px 35px;
+    padding: 105px 85px 85px 85px;
     section{
         width: 75%;
         width: calc(~"100% - 215px");
+        &.nonav{
+            display: block;
+            margin: 0 auto;
+        }
     }
     #nav-in{
         width: 21%;
@@ -335,4 +336,95 @@ header{
     float: right;
     font-weight: bolder;
     margin: 0 15px 0 0;
+}
+
+
+
+
+
+//
+// FONTS
+//
+.font-display{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0;
+
+    &.merriweather-300{
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+    }
+    &.merriweather-400{
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+    }
+    &.merriweather-700{
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+    }
+    &.merriweather-900{
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+    }
+
+    &.opensans-300{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    &.opensans-400{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    &.opensans-700{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    &.opensans-900{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+    }
+
+    .font-large{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        vertical-align: top;
+        width: 140px;
+        text-align: left;
+        font-size: 54pt;
+        letter-spacing: 1px;
+    }
+    .font-letters{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        vertical-align: top;
+        width: 50%;
+        span{
+            display: block;
+            font-size: 12pt;
+            letter-spacing: 2px;
+        }
+    }
+    .font-meta{
+        font-family: @sans;
+        font-weight: 400;
+        display: inline-flex;
+        flex-direction: column;
+        border-left: 2px solid @greyd;
+        box-sizing: border-box;
+        padding: 0 0 0 25px;
+        justify-content: center;
+        height: 100px;
+        vertical-align: top;
+        width: 20%;
+        span{
+            display: block;
+            font-size: 10pt;
+            letter-spacing: 1px;
+        }
+    }
 }
